@@ -1,47 +1,121 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Meet the Techs – Texan Technologies</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meet the Techs — Texan Technologies</title>
+  <meta name="description" content="Meet Melissa, AJ, and Justin — the trusted techs at Texan Technologies. Trusted, certified, friendly, and experienced low-voltage pros in El Paso, TX.">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header class="site-header">
-  <div class="brand"><img src="img/logo_primary.png" class="logo" alt="logo"><div class="brand-text"><h1>Texan Technologies</h1><p class="slogan">The Nerds That Know</p></div></div>
-  <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="meet-the-techs.html">Meet the Techs</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav>
-</header>
-<main>
-  <section style="padding:20px 60px">
-    <h2>Meet the Techs</h2>
-    <p>Our fully accredited team brings decades of combined experience. Learn who handles your project.</p>
-    <div class="team-grid">
-      <div class="team-card">
-        <img src="img/tech1.jpg" alt="Alex">
-        <h3>Alex — Network Engineer</h3>
-        <p>Specialty: Structured cabling & fiber design. 8 years experience.</p>
-        <div class="skill"><i style="width:95%"></i></div>
-        <p><em>Fun fact:</em> Believes Fluke is life.</p>
-      </div>
-      <div class="team-card">
-        <img src="img/tech2.jpg" alt="Maria">
-        <h3>Maria — Automation Specialist</h3>
-        <p>Specialty: Smart homes & IoT. 7 years experience.</p>
-        <div class="skill"><i style="width:90%"></i></div>
-        <p><em>Fun fact:</em> Can automate anything — including her coffee maker.</p>
-      </div>
-      <div class="team-card">
-        <img src="img/tech3.jpg" alt="James">
-        <h3>James — Security Tech</h3>
-        <p>Specialty: CCTV & access control. 9 years experience.</p>
-        <div class="skill"><i style="width:92%"></i></div>
-        <p><em>Fun fact:</em> Never misses a cable tie.</p>
-      </div>
-      <div class="team-card">
-        <img src="img/tech4.jpg" alt="Luis">
-        <h3>Luis — Field Lead</h3>
-        <p>Specialty: Multi-system installs & coordination. 10 years experience.</p>
-        <div class="skill"><i style="width:96%"></i></div>
-        <p><em>Fun fact:</em> Loves the smell of new Cat6 cable in the morning.</p>
+  <!-- Header (matches your site header) -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="img/logo_primary.png" class="logo" alt="Texan Technologies logo">
+      <div class="brand-text">
+        <h1>Texan Technologies</h1>
+        <p class="slogan">The Nerds That Know</p>
       </div>
     </div>
-  </section>
-</main>
-<footer class="footer">© 2025 Texan Technologies. All Rights Reserved.</footer>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="meet-the-techs.html" aria-current="page">Meet the Techs</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section style="padding:36px 6vw; max-width:1200px; margin:0 auto;">
+      <h2 style="color:#ffffff; font-size:28px; margin-bottom:6px;">Meet the Techs</h2>
+      <p style="color:var(--muted); margin-top:0; margin-bottom:20px; max-width:900px;">
+        Texan Technologies is built on people — real craft, real care, and real expertise. Meet the leaders who make the projects happen.
+      </p>
+
+      <div class="team-grid" role="list">
+        <!-- MELISSA -->
+        <article class="team-card" role="listitem" aria-labelledby="melissa-name">
+          <div class="team-media">
+            <img src="img/melissa.jpg" alt="Melissa — President & Owner" onerror="this.src='img/tech1.jpg'">
+          </div>
+          <h3 id="melissa-name">Melissa — President & Owner</h3>
+          <p class="title">The heart of the company • Operations & Product Mgmt</p>
+          <p class="bio">Melissa keeps Texan Technologies running with steady leadership and a heart of gold. She brings <strong>6+ years field experience</strong>, <strong>4 years of management</strong>, and deep product & customer-service expertise. She’s the bones of the company — organizing teams, managing projects, and making sure clients always get what they need.</p>
+          <ul class="meta">
+            <li><strong>Skills:</strong> Field Ops, Project Management, Client Relations</li>
+            <li><strong>Specialties:</strong> Process, training, warranties & client success</li>
+          </ul>
+          <div class="skill-label">Leadership</div>
+          <div class="skill" data-skill="95"><i style="width:0%"></i></div>
+          <div class="skill-label">Project Ops</div>
+          <div class="skill" data-skill="88"><i style="width:0%"></i></div>
+          <p class="fun">Fun fact: When she’s not running the business or doing mom duties, Melissa is buried in books—from epic fantasy to fantasy football analysis. Nerdy and proud. 📚⚽</p>
+        </article>
+
+        <!-- AJ (AARON) -->
+        <article class="team-card" role="listitem" aria-labelledby="aj-name">
+          <div class="team-media">
+            <img src="img/aj.jpg" alt="Aaron (AJ) — Lead Systems Engineer" onerror="this.src='img/tech2.jpg'">
+          </div>
+          <h3 id="aj-name">Aaron (AJ) — Lead Systems Engineer</h3>
+          <p class="title">Network architect • IT systems & security</p>
+          <p class="bio">AJ is the brain behind resilient networks. A deep thinker and a meticulous engineer, he architects reliable systems for enterprise and retail clients. His work keeps networks fast, secure, and scalable — from design through testing and handoff.</p>
+          <ul class="meta">
+            <li><strong>Skills:</strong> Network Architecture, Security, System Integration</li>
+            <li><strong>Specialties:</strong> Performance tuning, enterprise rollouts</li>
+          </ul>
+          <div class="skill-label">Networking</div>
+          <div class="skill" data-skill="96"><i style="width:0%"></i></div>
+          <div class="skill-label">Security</div>
+          <div class="skill" data-skill="90"><i style="width:0%"></i></div>
+          <p class="fun">Fun fact: AJ doesn't only design networks — he shreds guitar like a pro. 🎸 Amazing friend, model brother, and the calm center on big projects.</p>
+        </article>
+
+        <!-- JUSTIN (JD) -->
+        <article class="team-card" role="listitem" aria-labelledby="jd-name">
+          <div class="team-media">
+            <img src="img/jd.jpg" alt="Justin (JD) — Senior Cabling Specialist" onerror="this.src='img/tech3.jpg'">
+          </div>
+          <h3 id="jd-name">Justin (JD) — Senior Cabling Specialist</h3>
+          <p class="title">Cabling legend • Fiber, CAT6 & installs</p>
+          <p class="bio">JD is a cabling legend — hands-on, patient, and brutally effective. With certifications from Commscope, ICC, and more, he delivers clean, fully tested installs and wire-perfect systems that last. There’s no job too big or too messy for JD.</p>
+          <ul class="meta">
+            <li><strong>Skills:</strong> Fiber termination, CAT6 certification, site best practices</li>
+            <li><strong>Specialties:</strong> Commercial rollouts, residential perfection</li>
+          </ul>
+          <div class="skill-label">Fiber/Cabling</div>
+          <div class="skill" data-skill="98"><i style="width:0%"></i></div>
+          <div class="skill-label">Installation Quality</div>
+          <div class="skill" data-skill="95"><i style="width:0%"></i></div>
+          <p class="fun">Fun fact: JD loves a challenge — and a good laugh on site. He makes installs look easy and keeps clients smiling.</p>
+        </article>
+
+        <!-- OPEN SLOT / HIRING -->
+        <article class="team-card team-open" role="listitem" aria-labelledby="open-name">
+          <div class="team-media">
+            <img src="img/tech4.jpg" alt="Team Expansion — Join Us" onerror="this.src='img/tech4.jpg'">
+          </div>
+          <h3 id="open-name">We’re Growing — Join the Crew</h3>
+          <p class="title">Looking for skilled techs — apply today</p>
+          <p class="bio">We’re expanding and always looking for certified, honest technicians who take pride in excellent installs and customer care. If you’re certified (Commscope, BICSI, Cisco), we want to hear from you.</p>
+          <p class="fun">Interested? Send a message through our contact page and put “Careers” in the subject. We’ll get back fast.</p>
+        </article>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center; margin-top:26px;">
+        <a class="btn primary" href="contact.html">Request a Quote</a>
+        <a class="btn hollow" href="tel:+19152968237">Call (915) 296-8237</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 Texan Technologies. All Rights Reserved.</footer>
+
+  <script src="script.js"></script>
+  <!-- Live Chat placeholder: paste Tawk.to script here -->
 </body>
 </html>
