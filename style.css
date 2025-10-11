@@ -183,4 +183,16 @@ section {
 }
 @keyframes rotate {
   to { transform: rotate(360deg); }
+}/* --- Footer socials --- */
+.socials {
+  margin-top: 10px;
+}
+.socials a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 5px;
+  transition: text-shadow 0.3s ease;
+}
+.socials a:hover {
+  text-shadow: 0 0 6px var(--accent2);
 }
