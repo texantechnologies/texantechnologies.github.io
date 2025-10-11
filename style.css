@@ -195,4 +195,19 @@ section {
 }
 .socials a:hover {
   text-shadow: 0 0 6px var(--accent2);
+}/* --- Contact form --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  max-width: 500px;
 }
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255,255,255,0.05);
+  color: #e0f7fa;
+}
+.contact-form label { font-weight: bold; color: var(--accent); }
