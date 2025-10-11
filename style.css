@@ -1,3 +1,99 @@
+/* === Global Styles for Texan Technologies === */
+
+:root {
+  --accent: #00bcd4;
+  --accent2: #1de9b6;
+  --muted: #b0bec5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #e0f7fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 16px 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.site-header .logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+.brand-text h1 {
+  font-size: 24px;
+  color: var(--accent);
+}
+.brand-text .slogan {
+  font-size: 14px;
+  color: var(--muted);
+}
+.nav a {
+  color: var(--muted);
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px 0;
+  background: #111;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Main content layout */
+main {
+  padding: 40px 60px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.2);
+}
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.card p {
+  color: var(--muted);
+  font-size: 15px;
+}
 /* === Meet the Techs styles === */
 .team-grid {
   display:grid;
