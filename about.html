@@ -1,7 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About – Texan Technologies</title><link rel="stylesheet" href="style.css"></head>
-<body><!-- 🧠 The Tech Guys Technologies – Brand Anthem Section -->
+<body><!-- 🧠 Texan Technologies – Brand Anthem Section -->
+<section id="brand-anthem" style="
+  text-align: center; 
+  padding: 40px 20px; 
+  background: linear-gradient(135deg, #00bcd4 0%, #0288d1 100%);
+  border-bottom: 3px solid #0288d1;
+  color: white;
+">
+
+  <!-- Logo (click to play anthem) -->
+  <img src="img/logo_primary.png"
+       alt="Texan Technologies Logo"
+       id="anthemLogo"
+       style="width: 160px; margin-bottom: 15px; cursor: pointer; transition: transform 0.2s;"
+       onclick="playAnthem()"
+       onmouseover="this.style.transform='scale(1.05)'"
+       onmouseout="this.style.transform='scale(1)'">
+
+  <!-- Heading -->
+  <h2 style="
+    color: white; 
+    font-family: 'Segoe UI', sans-serif; 
+    font-size: 1.8em; 
+    margin-bottom: 10px;">
+    🎵 Our Brand Anthem
+  </h2>
+
+  <!-- Subtitle -->
+  <p style="font-size: 1.1em; color: #e0f7fa; margin-bottom: 10px;">
+    “The Nerds That Know” — by The Tech Guys Technologies
+  </p>
+
+  <!-- Hidden Audio -->
+  <audio id="anthem" src="audio/anthem.mp3"></audio>
+
+  <p style="font-size: 0.9em; color: #c8e6ff;">Click the logo to hear our anthem (10 sec)</p>
+
+</section>
+
+<!-- JS for playback -->
+<script>
+function playAnthem() {
+  const audio = document.getElementById('anthem');
+  audio.currentTime = 0; // start from beginning
+  audio.play();
+
+  // Stop after 10 seconds
+  setTimeout(() => {
+    audio.pause();
+    audio.currentTime = 0;
+  }, 10000);
+}
+</script><!-- 🧠 The Tech Guys Technologies – Brand Anthem Section -->
 <section id="brand-anthem" style="
   text-align: center; 
   padding: 40px 20px; 
