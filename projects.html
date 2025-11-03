@@ -13,18 +13,28 @@
     <img src="img/client_tb.png" alt="Taco Bell" style="height:48px;opacity:0.9">
     <img src="img/client_sunland.png" alt="Sunland Park Mall" style="height:48px;opacity:0.9">
   </div>
-  <div style="margin-top:20px" class="card"><h3>Completed Projects</h3><p>100s of residential installs and multiple commercial rollouts for restaurants and retail.</p></div>
-</main>
-<footer class="footer">
-  <p>© 2025 Texan Technologies. All Rights Reserved.</p>
-  <div class="socials">
-    <a href="https://facebook.com/" target="_blank">Facebook</a> |
-    <a href="https://instagram.com/" target="_blank">Instagram</a> |
-    <a href="https://linkedin.com/" target="_blank">LinkedIn</a> |
-    <a href="https://tiktok.com/" target="_blank">TikTok</a>
+  <section class="card" style="margin-top:20px;">
+  <h3>Featured Projects</h3>
+  <p>Tap a photo to view details.</p>
+  <div class="gallery">
+    <img src="img/project1.jpg" alt="Fiber install – Commercial" onclick="openModal(this)">
+    <img src="img/project2.jpg" alt="CCTV rollout – Restaurant" onclick="openModal(this)">
+    <img src="img/project3.jpg" alt="Smart home – Residential" onclick="openModal(this)">
+    <img src="img/project4.jpg" alt="Structured cabling – Office" onclick="openModal(this)">
   </div>
-</footer>
-  </div>
-</footer>
-</body>
-</html>
+</section>
+
+<!-- Lightbox modal -->
+<div id="modal" class="modal" onclick="this.style.display='none'">
+  <img class="modal-content" id="modal-img" alt="">
+  <div id="caption"></div>
+</div>
+
+<script>
+function openModal(img){
+  const m=document.getElementById('modal');
+  document.getElementById('modal-img').src=img.src;
+  document.getElementById('caption').textContent=img.alt;
+  m.style.display='block';
+}
+</script>
