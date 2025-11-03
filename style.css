@@ -210,4 +210,10 @@ section {
   background: rgba(255,255,255,0.05);
   color: #e0f7fa;
 }
-.contact-form label { font-weight: bold; color: var(--accent); }
+.contact-form label { font-weight: bold; color: var(--accent); }/* Projects gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.gallery img{width:100%;border-radius:8px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.03);box-shadow:0 8px 25px rgba(0,188,212,.2)}
+.modal{display:none;position:fixed;z-index:999;inset:0;background:rgba(0,0,0,.92);padding:60px 20px}
+.modal-content{display:block;margin:0 auto;max-width:900px;width:95%;border-radius:10px}
+#caption{color:#b0bec5;text-align:center;margin-top:10px}
